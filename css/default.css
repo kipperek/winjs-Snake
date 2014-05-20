@@ -1,0 +1,153 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    display: -ms-flexbox;
+}
+canvas {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+#info {
+    font-size: 100px;
+    width: 800px;
+    position:absolute;
+    text-align:center;
+    top: 230px;
+}
+#msg {
+    margin: 20px;
+}
+#menu {
+    position: absolute;
+    width: 204px;
+    left: 820px;
+    top: 50px;
+    font-size: 22px;
+    text-align: center;
+}
+#start {
+    font-size: 26px;
+}
+#highScores {
+    font-size: 26px;
+}
+hr {
+    background: white;
+    height: 1px;
+    border: none;
+}
+#pause {
+    cursor: pointer;
+}
+.menuOption {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.fixedlayout {
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr;
+    display: -ms-grid;
+    height: 768px;
+    width: 1024px;
+}
+#addHighscore {
+    position: absolute;
+    left: 0;
+    top: 350px;
+    width: 800px;
+    text-align: center;
+    display: none;
+}
+.score {
+    font-size: 18px;
+}
+
+.name {
+    width: 120px;
+    display: inline-block;
+}
+.point {
+    margin-left: 14px;
+    width: 70px;
+    display: inline-block;
+}
+#scorePoints {
+    font-size: 28px;
+}
+
+/* STEERING*/
+#steering {
+    position: absolute;
+    left: 820px;
+    top: 610px;
+    display: none;
+}
+.steerBtn {
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:absolute
+}
+
+#up {
+    left: 70px;
+    background: url(/images/up.png);
+}
+
+#up:active {
+    background: url(/images/up_m.png);
+}
+
+#down {
+     left: 70px;
+     top: 70px;
+     background: url(/images/down.png);
+}
+
+#down:active {
+     background: url(/images/down_m.png);
+}
+
+#left {
+     top: 70px;
+     
+     background: url(/images/left.png);
+}
+
+#left:active {
+     background: url(/images/left_m.png);
+}
+
+#right {
+    left: 140px;
+     top: 70px;
+     background: url(/images/right.png);
+}
+
+#right:active {
+     background: url(/images/right_m.png);
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

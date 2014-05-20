@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SZNEJK</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- SZNEJK references -->
+    
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/jquery.js"></script>
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div data-win-control="WinJS.UI.ViewBox">
+        <div class="fixedlayout">
+            <div id="menu">
+                <div id="start" class="menuOption">Start game</div>
+                <div id="highScores" class="menuOption">Show highscores</div>
+            </div>
+            <div id="info">SNAKE</div>
+            <canvas id="snakeCanvas" width="800" height="768"></canvas>
+            <div id="addHighscore"><div id="scorePoints"></div><input type="text" id="nameText" placeholder="Your name" /><button id="nameSubmit">Add highscore</button></div>
+            <div id="steering">
+                <div id="up" class="steerBtn"></div>
+                <div id="down" class="steerBtn"></div>
+                <div id="left" class="steerBtn"></div>
+                <div id="right" class="steerBtn"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
