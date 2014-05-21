@@ -244,7 +244,7 @@
     function addHighscore(pts, name) {
         $.ajax({
             type: "GET",
-            url: "http://snakewin8.cba.pl/setHighscores.php?pass=zaqwsx1991&name="+name+"&points=" + pts,
+            url: "http://snakewin8.cba.pl/setHighscores.php?name="+name+"&points=" + pts,
             success: function (data) {
                //When all ok
             }
